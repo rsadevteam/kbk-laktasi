@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
 
 const pillars = [
@@ -86,7 +87,7 @@ export default function About() {
                   fontStyle: "italic",
                   color: "var(--white)",
                   lineHeight: 1.5 }}>
-                  "Laktaši su dobili prve evropske medalje u kik boksu."
+                  &ldquo;Laktaši su dobili prve evropske medalje u kik boksu.&rdquo;
                 </p>
                 <p style={{
                   fontFamily: "var(--font-condensed)",
@@ -149,9 +150,12 @@ export default function About() {
                 padding: "1rem 1.5rem",
                 border: "1px solid var(--border)",
                 background: "var(--bg-card)" }}>
-                <img
+                <Image
                   src="/kbs_logo.png"
                   alt="Kickboxing Savez BiH"
+                  width={44}
+                  height={44}
+                  sizes="44px"
                   style={{ height: "44px", width: "auto", display: "block", flexShrink: 0 }}
                 />
                 <div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -22,23 +23,29 @@ export default function Nav() {
 	}, []);
 
 	useEffect(() => {
-		const sectionIds = [...links.map(l => l.id), "kontakt"];
-		const observers: IntersectionObserver[] = [];
+		const sections = [...links.map(link => link.id), "kontakt"]
+			.map(id => document.getElementById(id))
+			.filter((section): section is HTMLElement => section !== null);
 
-		sectionIds.forEach(id => {
-			const el = document.getElementById(id);
-			if (!el) return;
-			const obs = new IntersectionObserver(
-				([entry]) => {
-					if (entry.isIntersecting) setActive(id);
-				},
-				{ rootMargin: "-40% 0px -55% 0px", threshold: 0 }
-			);
-			obs.observe(el);
-			observers.push(obs);
-		});
+		const syncActiveSection = () => {
+			const probeY = Math.max(96, window.innerHeight * 0.35);
+			const nextActive =
+				sections.find(section => {
+					const rect = section.getBoundingClientRect();
+					return rect.top <= probeY && rect.bottom >= probeY;
+				})?.id ?? "";
 
-		return () => observers.forEach(o => o.disconnect());
+			setActive(current => (current === nextActive ? current : nextActive));
+		};
+
+		syncActiveSection();
+		window.addEventListener("scroll", syncActiveSection, { passive: true });
+		window.addEventListener("resize", syncActiveSection);
+
+		return () => {
+			window.removeEventListener("scroll", syncActiveSection);
+			window.removeEventListener("resize", syncActiveSection);
+		};
 	}, []);
 
 	return (
@@ -74,9 +81,13 @@ export default function Nav() {
 							alignItems: "center",
 							gap: "0.7rem" }}
 					>
-						<img
+						<Image
 							src="/kbkl_logo.png"
 							alt="KBK Laktaši"
+							width={44}
+							height={44}
+							sizes="44px"
+							priority
 							style={{ height: "44px", width: "auto", display: "block" }}
 						/>
 						<div>
@@ -115,6 +126,7 @@ export default function Nav() {
 								<a
 									key={l.href}
 									href={l.href}
+									aria-current={isActive ? "location" : undefined}
 									style={{
 										fontFamily: "var(--font-condensed)",
 										fontSize: "0.9rem",
@@ -148,6 +160,7 @@ export default function Nav() {
 						<a
 							href="#kontakt"
 							className="btn-punch"
+							aria-current={active === "kontakt" ? "location" : undefined}
 							style={{
 								padding: "0.6rem 1.6rem",
 								fontSize: "0.82rem",
@@ -189,6 +202,7 @@ export default function Nav() {
 							<a
 								key={l.href}
 								href={l.href}
+								aria-current={isActive ? "location" : undefined}
 								onClick={() => setOpen(false)}
 								style={{
 									display: "flex",
@@ -203,25 +217,31 @@ export default function Nav() {
 									textDecoration: "none",
 									padding: "0.7rem 0",
 									borderBottom: "1px solid var(--border)" }}
-							>
-								{isActive && (
-									<span style={{
-										display: "inline-block",
-										width: "4px",
-										height: "1.1em",
-										background: "var(--red)",
-										flexShrink: 0,
-									}} />
-								)}
-								{l.label}
-							</a>
-						);
-					})}
+									>
+										{isActive && (
+											<span style={{
+												display: "inline-block",
+												width: "4px",
+												height: "1.1em",
+												background: "var(--red)",
+												flexShrink: 0,
+											}} />
+										)}
+										{l.label}
+									</a>
+							);
+						})}
 					<a
 						href="#kontakt"
 						className="btn-punch"
+						aria-current={active === "kontakt" ? "location" : undefined}
 						onClick={() => setOpen(false)}
-						style={{ marginTop: "1.25rem", display: "inline-flex" }}
+						style={{
+							marginTop: "1.25rem",
+							display: "inline-flex",
+							outline: active === "kontakt" ? "1px solid rgba(232,224,208,0.3)" : "none",
+							outlineOffset: "3px",
+						}}
 					>
 						Kontakt
 					</a>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
 
 const achievements = [
@@ -119,9 +120,12 @@ export default function Coach() {
                 display: "inline-flex",
                 gap: "1.5rem",
                 alignItems: "center" }}>
-                <img
+                <Image
                   src="/kbs_logo.png"
                   alt="Kickboxing Savez BiH"
+                  width={48}
+                  height={48}
+                  sizes="48px"
                   style={{ height: "48px", width: "auto", display: "block", flexShrink: 0 }}
                 />
                 <div>

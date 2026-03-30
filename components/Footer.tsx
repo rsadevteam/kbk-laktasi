@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const socialLinks = [
 	{
 		href: "https://www.facebook.com/klubborilackihvjestina.laktasi/",
@@ -48,7 +50,14 @@ export default function Footer() {
 			>
 				{/* Logo */}
 				<div style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>
-					<img src="/kbkl_logo.png" alt="KBK Laktaši" style={{ height: "36px", width: "auto", display: "block" }} />
+					<Image
+						src="/kbkl_logo.png"
+						alt="KBK Laktaši"
+						width={36}
+						height={36}
+						sizes="36px"
+						style={{ height: "36px", width: "auto", display: "block" }}
+					/>
 					<div>
 						<div style={{ fontFamily: "var(--font-display)", fontSize: "0.95rem", color: "var(--white)", letterSpacing: "0.1em" }}>
 							KBK LAKTAŠI
