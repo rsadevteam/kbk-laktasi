@@ -95,7 +95,10 @@ export default function Hero() {
         maxWidth: "1400px",
         margin: "0 auto",
         padding: "8rem 2rem 5rem",
-        width: "100%" }}>
+        width: "100%",
+        boxSizing: "border-box" }}
+        className="hero-content-pad"
+      >
         {/* Top badge */}
         <div ref={badgeRef} style={{ marginBottom: "2rem" }}>
           <span className="section-label">
@@ -106,6 +109,7 @@ export default function Hero() {
         {/* Main title */}
         <h1
           ref={titleRef}
+          className="hero-title"
           style={{
             fontFamily: "var(--font-display)",
             fontSize: "clamp(5.5rem, 16vw, 18rem)",
@@ -182,7 +186,7 @@ export default function Hero() {
         </div>
 
         {/* CTAs */}
-        <div ref={ctaRef} style={{ marginTop: "3rem", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+        <div ref={ctaRef} className="hero-ctas" style={{ marginTop: "3rem", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
           <a href="#sampioni" className="btn-punch">
             Upoznaj šampione
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

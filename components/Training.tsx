@@ -130,7 +130,7 @@ export default function Training() {
 
         {/* Bottom CTA */}
         <ScrollReveal delay={400}>
-          <div style={{
+          <div className="cta-bar" style={{
             marginTop: "3.5rem",
             border: "1px solid var(--border)",
             background: "var(--bg-card)",
@@ -157,7 +157,7 @@ export default function Training() {
                 Kontaktiraj nas i zakaži prvi probni trening.
               </div>
             </div>
-            <a href="#kontakt" className="btn-punch" style={{ flexShrink: 0 }}>
+            <a href="#kontakt" className="btn-punch cta-btn">
               Kontaktiraj klub
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                 <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
