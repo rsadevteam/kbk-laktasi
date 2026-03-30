@@ -256,7 +256,7 @@ body::before {
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: clamp(3rem, 13.5vw, 5.5rem) !important;
+    font-size: clamp(3.75rem, 14.5vw, 6rem) !important;
   }
 
   .hero-content-pad {
