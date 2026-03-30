@@ -34,8 +34,7 @@ export default function Nav() {
 					? "1px solid rgba(232,224,208,0.07)"
 					: "1px solid transparent",
 				transition:
-					"background 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease",
-			}}
+					"background 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease" }}
 		>
 			<div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 2rem" }}>
 				<div
@@ -43,8 +42,7 @@ export default function Nav() {
 						display: "flex",
 						alignItems: "center",
 						justifyContent: "space-between",
-						height: "68px",
-					}}
+						height: "68px" }}
 				>
 					{/* Logo */}
 					<a
@@ -53,8 +51,7 @@ export default function Nav() {
 							textDecoration: "none",
 							display: "flex",
 							alignItems: "center",
-							gap: "0.7rem",
-						}}
+							gap: "0.7rem" }}
 					>
 						<img
 							src="/kbkl_logo.png"
@@ -68,8 +65,7 @@ export default function Nav() {
 									fontSize: "1.25rem",
 									color: "var(--white)",
 									lineHeight: 1,
-									letterSpacing: "0.08em",
-								}}
+									letterSpacing: "0.08em" }}
 							>
 								KBK LAKTAŠI
 							</div>
@@ -80,8 +76,7 @@ export default function Nav() {
 									color: "var(--white-dim)",
 									letterSpacing: "0.22em",
 									textTransform: "uppercase",
-									marginTop: "2px",
-								}}
+									marginTop: "2px" }}
 							>
 								Kik Boks Klub
 							</div>
@@ -106,8 +101,7 @@ export default function Nav() {
 									color: "var(--white-dim)",
 									textDecoration: "none",
 									transition: "color 0.2s ease",
-									position: "relative",
-								}}
+									position: "relative" }}
 								onMouseEnter={(e) =>
 									(e.currentTarget.style.color = "var(--white)")
 								}
@@ -136,8 +130,7 @@ export default function Nav() {
 							border: "none",
 							color: "var(--white)",
 							cursor: "pointer",
-							padding: "0.25rem",
-						}}
+							padding: "0.25rem" }}
 					>
 						{open ? <X size={24} /> : <Menu size={24} />}
 					</button>
@@ -150,8 +143,7 @@ export default function Nav() {
 					style={{
 						background: "rgba(6,6,6,0.98)",
 						borderTop: "1px solid var(--border)",
-						padding: "1.5rem 2rem 2rem",
-					}}
+						padding: "1.5rem 2rem 2rem" }}
 				>
 					{links.map((l) => (
 						<a
@@ -168,8 +160,7 @@ export default function Nav() {
 								color: "var(--white)",
 								textDecoration: "none",
 								padding: "0.7rem 0",
-								borderBottom: "1px solid var(--border)",
-							}}
+								borderBottom: "1px solid var(--border)" }}
 						>
 							{l.label}
 						</a>

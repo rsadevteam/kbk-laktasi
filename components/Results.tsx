@@ -48,11 +48,10 @@ export default function Results() {
       padding: "7rem 0",
       background: "var(--bg-surface)",
       position: "relative",
-      overflow: "hidden",
-    }}>
+      overflow: "hidden" }}>
       <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 2rem" }}>
         <ScrollReveal>
-          <span className="section-label" style={{ marginBottom: "1rem", display: "flex" }}>
+          <span className="section-label" style={{ marginBottom: "1rem" }}>
             Rezultati
           </span>
         </ScrollReveal>
@@ -63,8 +62,7 @@ export default function Results() {
             lineHeight: 0.9,
             color: "var(--white)",
             marginBottom: "4rem",
-            letterSpacing: "0.02em",
-          }}>
+            letterSpacing: "0.02em" }}>
             HISTORIJA<br />
             <span style={{ color: "var(--red)" }}>POBJEDA.</span>
           </h2>
@@ -82,8 +80,7 @@ export default function Results() {
                   color: yi === 0 ? "var(--red)" : "rgba(232,224,208,0.12)",
                   lineHeight: 1,
                   letterSpacing: "0.03em",
-                  userSelect: "none",
-                }}>
+                  userSelect: "none" }}>
                   {y.year}
                 </div>
 
@@ -105,8 +102,7 @@ export default function Results() {
                           fontWeight: 700,
                           color: "var(--white)",
                           letterSpacing: "0.05em",
-                          marginBottom: "0.25rem",
-                        }}>
+                          marginBottom: "0.25rem" }}>
                           {r.event}
                         </div>
                         <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap", marginBottom: "0.2rem" }}>
@@ -118,8 +114,7 @@ export default function Results() {
                               textTransform: "uppercase",
                               color: "var(--red)",
                               border: "1px solid rgba(192,57,43,0.25)",
-                              padding: "0.1rem 0.45rem",
-                            }}>
+                              padding: "0.1rem 0.45rem" }}>
                               {a}
                             </span>
                           ))}
@@ -130,8 +125,7 @@ export default function Results() {
                             fontSize: "0.8rem",
                             color: "var(--white-dim)",
                             lineHeight: 1.4,
-                            marginTop: "0.15rem",
-                          }}>
+                            marginTop: "0.15rem" }}>
                             {r.note}
                           </div>
                         )}

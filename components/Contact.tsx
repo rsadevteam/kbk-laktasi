@@ -8,16 +8,14 @@ export default function Contact() {
       padding: "7rem 0 5rem",
       background: "var(--bg)",
       position: "relative",
-      overflow: "hidden",
-    }}>
+      overflow: "hidden" }}>
       {/* Red corner accent */}
       <div style={{
         position: "absolute",
         bottom: 0, right: 0,
         width: "400px", height: "400px",
         background: "radial-gradient(circle at bottom right, rgba(192,57,43,0.1) 0%, transparent 65%)",
-        pointerEvents: "none",
-      }} />
+        pointerEvents: "none" }} />
 
       <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 2rem", position: "relative", zIndex: 1 }}>
         <div className="two-col-grid">
@@ -25,7 +23,7 @@ export default function Contact() {
           {/* Left — headline + text */}
           <div>
             <ScrollReveal>
-              <span className="section-label" style={{ marginBottom: "1.5rem", display: "flex" }}>
+              <span className="section-label" style={{ marginBottom: "1.5rem" }}>
                 Kontakt
               </span>
             </ScrollReveal>
@@ -36,8 +34,7 @@ export default function Contact() {
                 lineHeight: 0.9,
                 color: "var(--white)",
                 marginBottom: "1.5rem",
-                letterSpacing: "0.02em",
-              }}>
+                letterSpacing: "0.02em" }}>
                 PRIDRUŽI SE<br />
                 <span style={{ color: "var(--red)" }}>TIMU.</span>
               </h2>
@@ -48,8 +45,7 @@ export default function Contact() {
                 fontSize: "1rem",
                 lineHeight: 1.75,
                 color: "var(--white-dim)",
-                maxWidth: "440px",
-              }}>
+                maxWidth: "440px" }}>
                 Bez obzira na uzrast ili nivo iskustva — vrata su otvorena.
                 Bilo da si početnik koji želi probati kik boks,
                 ili iskusni takmičar koji traži ozbiljan trening program,
@@ -88,8 +84,7 @@ export default function Contact() {
                   border: "1px solid var(--border)",
                   background: "var(--bg-card)",
                   alignItems: "flex-start",
-                  transition: "border-color 0.3s ease",
-                }}
+                  transition: "border-color 0.3s ease" }}
                 onMouseEnter={e => (e.currentTarget.style.borderColor = "rgba(192,57,43,0.3)")}
                 onMouseLeave={e => (e.currentTarget.style.borderColor = "var(--border)")}
                 >
@@ -98,8 +93,7 @@ export default function Contact() {
                     fontSize: "1.2rem",
                     color: "var(--red)",
                     lineHeight: 1.4,
-                    flexShrink: 0,
-                  }}>
+                    flexShrink: 0 }}>
                     {item.icon}
                   </span>
                   <div>
@@ -109,8 +103,7 @@ export default function Contact() {
                       letterSpacing: "0.22em",
                       textTransform: "uppercase",
                       color: "var(--white-dim)",
-                      marginBottom: "0.2rem",
-                    }}>
+                      marginBottom: "0.2rem" }}>
                       {item.label}
                     </div>
                     <div style={{
@@ -118,16 +111,14 @@ export default function Contact() {
                       fontSize: "1rem",
                       fontWeight: 700,
                       color: "var(--white)",
-                      lineHeight: 1.3,
-                    }}>
+                      lineHeight: 1.3 }}>
                       {item.value}
                     </div>
                     <div style={{
                       fontFamily: "var(--font-body)",
                       fontSize: "0.8rem",
                       color: "var(--white-dim)",
-                      marginTop: "0.2rem",
-                    }}>
+                      marginTop: "0.2rem" }}>
                       {item.sub}
                     </div>
                   </div>
@@ -160,8 +151,7 @@ export default function Contact() {
                       transition: "all 0.2s ease",
                       display: "flex",
                       alignItems: "center",
-                      gap: "0.4rem",
-                    }}
+                      gap: "0.4rem" }}
                     onMouseEnter={e => {
                       e.currentTarget.style.color = "var(--red)";
                       e.currentTarget.style.borderColor = "rgba(192,57,43,0.35)";
@@ -216,8 +206,7 @@ export default function Contact() {
                       border: "1px solid var(--border)",
                       color: "var(--white-dim)",
                       textDecoration: "none",
-                      transition: "color 0.2s ease, border-color 0.2s ease",
-                    }}
+                      transition: "color 0.2s ease, border-color 0.2s ease" }}
                     onMouseEnter={e => {
                       e.currentTarget.style.color = "var(--red)";
                       e.currentTarget.style.borderColor = "rgba(192,57,43,0.4)";

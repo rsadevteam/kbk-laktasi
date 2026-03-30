@@ -47,14 +47,12 @@ export default function Stats() {
       borderBottom: "1px solid var(--border)",
       padding: "4rem 0",
       position: "relative",
-      overflow: "hidden",
-    }}>
+      overflow: "hidden" }}>
       <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 2rem" }}>
         <div style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-          gap: "0",
-        }}>
+          gap: "0" }}>
           {stats.map((s, i) => (
             <ScrollReveal key={s.label} delay={i * 120}>
               <div
@@ -64,16 +62,14 @@ export default function Stats() {
                   borderTop: "none",
                   borderBottom: "none",
                   borderLeft: "none",
-                  background: "transparent",
-                }}
+                  background: "transparent" }}
               >
                 <div style={{
                   fontFamily: "var(--font-display)",
                   fontSize: "clamp(3rem, 6vw, 4.5rem)",
                   color: "var(--red)",
                   lineHeight: 1,
-                  letterSpacing: "0.02em",
-                }}>
+                  letterSpacing: "0.02em" }}>
                   <CountUp target={s.value} suffix={s.suffix} />
                 </div>
                 <div style={{
@@ -83,8 +79,7 @@ export default function Stats() {
                   letterSpacing: "0.1em",
                   textTransform: "uppercase",
                   color: "var(--white)",
-                  marginTop: "0.5rem",
-                }}>
+                  marginTop: "0.5rem" }}>
                   {s.label}
                 </div>
                 <div style={{
@@ -92,8 +87,7 @@ export default function Stats() {
                   fontSize: "0.78rem",
                   color: "var(--white-dim)",
                   marginTop: "0.3rem",
-                  lineHeight: 1.4,
-                }}>
+                  lineHeight: 1.4 }}>
                   {s.sublabel}
                 </div>
               </div>

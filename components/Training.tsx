@@ -29,8 +29,7 @@ export default function Training() {
       padding: "7rem 0",
       background: "var(--bg-surface)",
       position: "relative",
-      overflow: "hidden",
-    }}>
+      overflow: "hidden" }}>
       <div className="hex-grid-bg" />
 
       <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 2rem", position: "relative", zIndex: 1 }}>
@@ -38,7 +37,7 @@ export default function Training() {
         <div className="training-header-grid" style={{ marginBottom: "4rem" }}>
           <div>
             <ScrollReveal>
-              <span className="section-label" style={{ marginBottom: "1rem", display: "flex" }}>
+              <span className="section-label" style={{ marginBottom: "1rem" }}>
                 Treninzi
               </span>
             </ScrollReveal>
@@ -48,8 +47,7 @@ export default function Training() {
                 fontSize: "clamp(3rem, 7vw, 6rem)",
                 lineHeight: 0.9,
                 color: "var(--white)",
-                letterSpacing: "0.02em",
-              }}>
+                letterSpacing: "0.02em" }}>
                 POČNI<br />
                 <span style={{ color: "var(--red)" }}>DANAS.</span>
               </h2>
@@ -61,30 +59,26 @@ export default function Training() {
               textAlign: "right",
               display: "flex",
               flexDirection: "column",
-              gap: "0.5rem",
-            }}>
+              gap: "0.5rem" }}>
               <div style={{
                 fontFamily: "var(--font-condensed)",
                 fontSize: "0.72rem",
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "var(--white-dim)",
-              }}>
+                color: "var(--white-dim)" }}>
                 Lokacija
               </div>
               <div style={{
                 fontFamily: "var(--font-condensed)",
                 fontSize: "1.1rem",
                 fontWeight: 700,
-                color: "var(--white)",
-              }}>
+                color: "var(--white)" }}>
                 Sportski centar Laktaši
               </div>
               <div style={{
                 fontFamily: "var(--font-body)",
                 fontSize: "0.85rem",
-                color: "var(--white-dim)",
-              }}>
+                color: "var(--white-dim)" }}>
                 Karađorđeva bb, 78250 Laktaši
               </div>
             </div>
@@ -97,22 +91,19 @@ export default function Training() {
           gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
           gap: "1px",
           background: "var(--border)",
-          border: "1px solid var(--border)",
-        }}>
+          border: "1px solid var(--border)" }}>
           {features.map((f, i) => (
             <ScrollReveal key={f.title} delay={i * 80}>
               <div className="stat-card" style={{
                 border: "none",
                 borderRadius: 0,
                 background: "var(--bg-surface)",
-                minHeight: "200px",
-              }}>
+                minHeight: "200px" }}>
                 <div style={{
                   fontFamily: "var(--font-display)",
                   fontSize: "2rem",
                   color: "var(--red)",
-                  marginBottom: "1rem",
-                }}>
+                  marginBottom: "1rem" }}>
                   {f.icon}
                 </div>
                 <div style={{
@@ -122,16 +113,14 @@ export default function Training() {
                   letterSpacing: "0.1em",
                   textTransform: "uppercase",
                   color: "var(--white)",
-                  marginBottom: "0.6rem",
-                }}>
+                  marginBottom: "0.6rem" }}>
                   {f.title}
                 </div>
                 <p style={{
                   fontFamily: "var(--font-body)",
                   fontSize: "0.88rem",
                   color: "var(--white-dim)",
-                  lineHeight: 1.65,
-                }}>
+                  lineHeight: 1.65 }}>
                   {f.body}
                 </p>
               </div>
@@ -150,15 +139,13 @@ export default function Training() {
             justifyContent: "space-between",
             alignItems: "center",
             gap: "2rem",
-            flexWrap: "wrap",
-          }}>
+            flexWrap: "wrap" }}>
             <div>
               <div style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
                 color: "var(--white)",
-                lineHeight: 1.1,
-              }}>
+                lineHeight: 1.1 }}>
                 SPREMAN/NA ZA PRVI KORAK?
               </div>
               <div style={{
@@ -166,8 +153,7 @@ export default function Training() {
                 fontSize: "0.9rem",
                 color: "var(--white-dim)",
                 marginTop: "0.4rem",
-                letterSpacing: "0.06em",
-              }}>
+                letterSpacing: "0.06em" }}>
                 Kontaktiraj nas i zakaži prvi probni trening.
               </div>
             </div>

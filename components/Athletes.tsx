@@ -63,8 +63,7 @@ export default function Athletes() {
       padding: "7rem 0",
       background: "var(--bg)",
       position: "relative",
-      overflow: "hidden",
-    }}>
+      overflow: "hidden" }}>
       {/* Big bg text */}
       <div style={{
         position: "absolute",
@@ -77,14 +76,13 @@ export default function Athletes() {
         color: "transparent",
         WebkitTextStroke: "1px rgba(232,224,208,0.035)",
         userSelect: "none",
-        pointerEvents: "none",
-      }}>
+        pointerEvents: "none" }}>
         BORCI
       </div>
 
       <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 2rem", position: "relative", zIndex: 1 }}>
         <ScrollReveal>
-          <span className="section-label" style={{ marginBottom: "1rem", display: "flex" }}>
+          <span className="section-label" style={{ marginBottom: "1rem" }}>
             Naši Šampioni
           </span>
         </ScrollReveal>
@@ -96,8 +94,7 @@ export default function Athletes() {
             lineHeight: 0.9,
             color: "var(--white)",
             marginBottom: "4rem",
-            letterSpacing: "0.02em",
-          }}>
+            letterSpacing: "0.02em" }}>
             BORCI KOJI<br />
             <span style={{ color: "var(--red)" }}>NOSE</span> GRAD.
           </h2>
@@ -107,16 +104,14 @@ export default function Athletes() {
         <div style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-          gap: "1.25rem",
-        }}>
+          gap: "1.25rem" }}>
           {athletes.map((a, i) => (
             <ScrollReveal key={a.name} delay={i * 100}>
               <div className="athlete-card" style={{ height: "100%" }}>
                 {/* Card top accent */}
                 <div style={{
                   height: "5px",
-                  background: `linear-gradient(90deg, var(--red), ${a.color})`,
-                }} />
+                  background: `linear-gradient(90deg, var(--red), ${a.color})` }} />
 
                 <div style={{ padding: "1.75rem" }}>
                   {/* Number + disciplines */}
@@ -126,8 +121,7 @@ export default function Athletes() {
                       fontSize: "3.5rem",
                       color: "rgba(192,57,43,0.18)",
                       lineHeight: 1,
-                      letterSpacing: "0.02em",
-                    }}>
+                      letterSpacing: "0.02em" }}>
                       {a.number}
                     </span>
                     <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "0.3rem" }}>
@@ -139,8 +133,7 @@ export default function Athletes() {
                           textTransform: "uppercase",
                           color: "var(--red)",
                           border: "1px solid rgba(192,57,43,0.3)",
-                          padding: "0.2rem 0.5rem",
-                        }}>
+                          padding: "0.2rem 0.5rem" }}>
                           {d}
                         </span>
                       ))}
@@ -154,8 +147,7 @@ export default function Athletes() {
                     color: "var(--white)",
                     lineHeight: 1,
                     letterSpacing: "0.03em",
-                    marginBottom: "0.3rem",
-                  }}>
+                    marginBottom: "0.3rem" }}>
                     {a.name}
                   </h3>
                   <div style={{
@@ -164,8 +156,7 @@ export default function Athletes() {
                     letterSpacing: "0.18em",
                     textTransform: "uppercase",
                     color: "var(--white-dim)",
-                    marginBottom: "1.25rem",
-                  }}>
+                    marginBottom: "1.25rem" }}>
                     {a.years}
                   </div>
 
@@ -180,8 +171,7 @@ export default function Athletes() {
                     marginBottom: "1.25rem",
                     display: "flex",
                     alignItems: "center",
-                    gap: "0.4rem",
-                  }}>
+                    gap: "0.4rem" }}>
                     <span style={{ color: "var(--red)", fontSize: "1rem" }}>◈</span>
                     {a.rank}
                   </div>
@@ -200,8 +190,7 @@ export default function Athletes() {
                         fontSize: "0.88rem",
                         fontWeight: 500,
                         color: "var(--white-dim)",
-                        lineHeight: 1.3,
-                      }}>
+                        lineHeight: 1.3 }}>
                         <span style={{ color: "var(--red)", flexShrink: 0, marginTop: "1px" }}>—</span>
                         {h}
                       </li>

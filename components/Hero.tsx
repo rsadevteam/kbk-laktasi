@@ -37,8 +37,7 @@ export default function Hero() {
         display: "flex",
         alignItems: "flex-end",
         overflow: "hidden",
-        background: "var(--bg)",
-      }}
+        background: "var(--bg)" }}
     >
       {/* Hex grid bg */}
       <div className="hex-grid-bg" />
@@ -50,8 +49,7 @@ export default function Hero() {
         width: "55%",
         height: "100%",
         background: "linear-gradient(135deg, transparent 45%, rgba(192,57,43,0.04) 45%)",
-        pointerEvents: "none",
-      }} />
+        pointerEvents: "none" }} />
 
       {/* Vertical red stripe - far right */}
       <div style={{
@@ -60,8 +58,7 @@ export default function Hero() {
         width: "3px",
         height: "100%",
         background: "linear-gradient(to bottom, var(--red) 0%, rgba(192,57,43,0.0) 100%)",
-        opacity: 0.35,
-      }} />
+        opacity: 0.35 }} />
 
       {/* Large ghost number */}
       <div className="hero-ghost-text" style={{
@@ -76,8 +73,7 @@ export default function Hero() {
         WebkitTextStroke: "1px rgba(192,57,43,0.08)",
         userSelect: "none",
         pointerEvents: "none",
-        letterSpacing: "-0.05em",
-      }}>
+        letterSpacing: "-0.05em" }}>
         KBK
       </div>
 
@@ -90,8 +86,7 @@ export default function Hero() {
         height: "700px",
         borderRadius: "50%",
         background: "radial-gradient(circle, rgba(192,57,43,0.12) 0%, transparent 70%)",
-        pointerEvents: "none",
-      }} />
+        pointerEvents: "none" }} />
 
       {/* Content */}
       <div style={{
@@ -100,8 +95,7 @@ export default function Hero() {
         maxWidth: "1400px",
         margin: "0 auto",
         padding: "8rem 2rem 5rem",
-        width: "100%",
-      }}>
+        width: "100%" }}>
         {/* Top badge */}
         <div ref={badgeRef} style={{ marginBottom: "2rem" }}>
           <span className="section-label">
@@ -119,8 +113,7 @@ export default function Hero() {
             letterSpacing: "-0.01em",
             color: "var(--white)",
             marginBottom: "0.1em",
-            position: "relative",
-          }}
+            position: "relative" }}
         >
           KIK BOKS
           <br />
@@ -131,8 +124,7 @@ export default function Hero() {
           <span style={{
             WebkitTextStroke: "2px var(--white)",
             color: "transparent",
-            display: "inline-block",
-          }}>
+            display: "inline-block" }}>
             LAKTAŠI
           </span>
         </h1>
@@ -143,16 +135,14 @@ export default function Hero() {
           display: "flex",
           flexDirection: "column",
           gap: "0.5rem",
-          maxWidth: "580px",
-        }}>
+          maxWidth: "580px" }}>
           <p style={{
             fontFamily: "var(--font-condensed)",
             fontSize: "clamp(1rem, 2vw, 1.3rem)",
             fontWeight: 300,
             letterSpacing: "0.06em",
             color: "var(--white-dim)",
-            lineHeight: 1.5,
-          }}>
+            lineHeight: 1.5 }}>
             Prvaci Bosne, Evrope i Svijeta.
             Klub koji gradi šampione od djetinjstva.
           </p>
@@ -162,8 +152,7 @@ export default function Hero() {
             marginTop: "1rem",
             display: "flex",
             gap: "2rem",
-            flexWrap: "wrap",
-          }}>
+            flexWrap: "wrap" }}>
             {[
               { n: "2×", label: "Prvaci Evrope" },
               { n: "32", label: "Medalje 2025" },
@@ -175,8 +164,7 @@ export default function Hero() {
                   fontSize: "2.4rem",
                   color: "var(--red)",
                   lineHeight: 1,
-                  letterSpacing: "0.02em",
-                }}>
+                  letterSpacing: "0.02em" }}>
                   {s.n}
                 </span>
                 <span style={{
@@ -185,8 +173,7 @@ export default function Hero() {
                   letterSpacing: "0.2em",
                   textTransform: "uppercase",
                   color: "var(--white-dim)",
-                  marginTop: "0.2rem",
-                }}>
+                  marginTop: "0.2rem" }}>
                   {s.label}
                 </span>
               </div>
@@ -215,21 +202,18 @@ export default function Hero() {
           display: "flex",
           alignItems: "center",
           gap: "0.75rem",
-          opacity: 0.4,
-        }}>
+          opacity: 0.4 }}>
           <div style={{
             width: "1px",
             height: "60px",
-            background: "linear-gradient(to bottom, transparent, var(--white))",
-          }} />
+            background: "linear-gradient(to bottom, transparent, var(--white))" }} />
           <span style={{
             fontFamily: "var(--font-condensed)",
             fontSize: "0.65rem",
             letterSpacing: "0.25em",
             textTransform: "uppercase",
             color: "var(--white)",
-            writingMode: "vertical-rl",
-          }}>
+            writingMode: "vertical-rl" }}>
             Skroluj
           </span>
         </div>

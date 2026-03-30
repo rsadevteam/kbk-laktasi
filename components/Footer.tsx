@@ -44,8 +44,7 @@ export default function Footer() {
 					justifyContent: "space-between",
 					alignItems: "center",
 					flexWrap: "wrap",
-					gap: "1.5rem",
-				}}
+					gap: "1.5rem" }}
 			>
 				{/* Logo */}
 				<div style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>

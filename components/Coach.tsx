@@ -15,8 +15,7 @@ export default function Coach() {
       padding: "7rem 0",
       background: "var(--bg)",
       position: "relative",
-      overflow: "hidden",
-    }}>
+      overflow: "hidden" }}>
       {/* Big diagonal background accent */}
       <div style={{
         position: "absolute",
@@ -24,16 +23,14 @@ export default function Coach() {
         width: "50%",
         height: "100%",
         background: "linear-gradient(135deg, transparent 40%, rgba(192,57,43,0.04) 40%)",
-        pointerEvents: "none",
-      }} />
+        pointerEvents: "none" }} />
       <div style={{
         position: "absolute",
         top: 0, right: 0,
         width: "3px",
         height: "100%",
         background: "linear-gradient(to bottom, var(--red), transparent)",
-        opacity: 0.3,
-      }} />
+        opacity: 0.3 }} />
 
       <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 2rem", position: "relative", zIndex: 1 }}>
         <div className="two-col-grid">
@@ -41,7 +38,7 @@ export default function Coach() {
           {/* Left: info */}
           <div>
             <ScrollReveal>
-              <span className="section-label" style={{ marginBottom: "1.5rem", display: "flex" }}>
+              <span className="section-label" style={{ marginBottom: "1.5rem" }}>
                 Stručni kadar
               </span>
             </ScrollReveal>
@@ -53,8 +50,7 @@ export default function Coach() {
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
                 color: "var(--red)",
-                marginBottom: "0.5rem",
-              }}>
+                marginBottom: "0.5rem" }}>
                 Glavni trener
               </div>
               <h2 style={{
@@ -63,8 +59,7 @@ export default function Coach() {
                 lineHeight: 0.88,
                 letterSpacing: "0.02em",
                 color: "var(--white)",
-                marginBottom: "0.2em",
-              }}>
+                marginBottom: "0.2em" }}>
                 IGOR<br />
                 <span style={{ color: "var(--red)" }}>GRBIĆ</span>
               </h2>
@@ -80,8 +75,7 @@ export default function Coach() {
                 marginBottom: "2rem",
                 display: "flex",
                 gap: "1.5rem",
-                flexWrap: "wrap",
-              }}>
+                flexWrap: "wrap" }}>
                 <span>Licenca B · KBS BiH</span>
                 <span style={{ color: "var(--border)" }}>|</span>
                 <span>B-TL24-29</span>
@@ -97,8 +91,7 @@ export default function Coach() {
                 lineHeight: 1.75,
                 color: "var(--white-dim)",
                 maxWidth: "500px",
-                marginBottom: "1.5rem",
-              }}>
+                marginBottom: "1.5rem" }}>
                 Igor Grbić je osnova svega što KBK Laktaši predstavlja. Kao glavni trener,
                 doveo je klub od lokalnog sportskog kolektiva do međunarodne referentne
                 tačke bosanskoga kik boksa.
@@ -108,8 +101,7 @@ export default function Coach() {
                 fontSize: "1rem",
                 lineHeight: 1.75,
                 color: "var(--white-dim)",
-                maxWidth: "500px",
-              }}>
+                maxWidth: "500px" }}>
                 Trener je i reprezentacije Bosne i Hercegovine — vodio je borce na
                 Evropskim i Svjetskim takmičenjima. Dvaput zaredom proglašen najboljim
                 trenerom grada Laktaši, a KBS BiH ga je 2024. odlikovao kao
@@ -126,8 +118,7 @@ export default function Coach() {
                 padding: "1.4rem 1.75rem",
                 display: "inline-flex",
                 gap: "1.5rem",
-                alignItems: "center",
-              }}>
+                alignItems: "center" }}>
                 <img
                   src="/kbs_logo.png"
                   alt="Kickboxing Savez BiH"
@@ -140,16 +131,14 @@ export default function Coach() {
                     letterSpacing: "0.2em",
                     textTransform: "uppercase",
                     color: "var(--white-dim)",
-                    marginBottom: "0.2rem",
-                  }}>
+                    marginBottom: "0.2rem" }}>
                     Trenerska licenca
                   </div>
                   <div style={{
                     fontFamily: "var(--font-condensed)",
                     fontSize: "1rem",
                     fontWeight: 700,
-                    color: "var(--white)",
-                  }}>
+                    color: "var(--white)" }}>
                     KBS BiH · B-TL24-29
                   </div>
                 </div>
@@ -166,8 +155,7 @@ export default function Coach() {
                 letterSpacing: "0.25em",
                 textTransform: "uppercase",
                 color: "var(--white-dim)",
-                marginBottom: "2rem",
-              }}>
+                marginBottom: "2rem" }}>
                 Ključna priznanja
               </div>
             </ScrollReveal>
@@ -183,14 +171,12 @@ export default function Coach() {
                     gap: "1.25rem",
                     paddingBottom: "1.75rem",
                     alignItems: "flex-start",
-                    position: "relative",
-                  }}>
+                    position: "relative" }}>
                     {/* Dot */}
                     <div className="timeline-dot" style={{
                       position: "absolute",
                       left: "-2.85rem",
-                      marginTop: "4px",
-                    }} />
+                      marginTop: "4px" }} />
 
                     <div>
                       <div style={{
@@ -198,8 +184,7 @@ export default function Coach() {
                         fontSize: "0.85rem",
                         letterSpacing: "0.1em",
                         color: "var(--red)",
-                        marginBottom: "0.2rem",
-                      }}>
+                        marginBottom: "0.2rem" }}>
                         {a.year}
                       </div>
                       <div style={{
@@ -207,8 +192,7 @@ export default function Coach() {
                         fontSize: "0.95rem",
                         fontWeight: 500,
                         color: "var(--white)",
-                        lineHeight: 1.4,
-                      }}>
+                        lineHeight: 1.4 }}>
                         {a.text}
                       </div>
                     </div>

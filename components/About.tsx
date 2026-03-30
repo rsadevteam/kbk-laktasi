@@ -29,7 +29,7 @@ export default function About() {
           {/* Left */}
           <div>
             <ScrollReveal>
-              <span className="section-label" style={{ marginBottom: "1.5rem", display: "flex" }}>
+              <span className="section-label" style={{ marginBottom: "1.5rem" }}>
                 O Klubu
               </span>
             </ScrollReveal>
@@ -41,8 +41,7 @@ export default function About() {
                 lineHeight: 0.92,
                 letterSpacing: "0.02em",
                 color: "var(--white)",
-                marginBottom: "1.5rem",
-              }}>
+                marginBottom: "1.5rem" }}>
                 MALI KLUB,<br />
                 <span style={{ color: "var(--red)" }}>VELIKA</span><br />
                 SRCA.
@@ -56,8 +55,7 @@ export default function About() {
                 lineHeight: 1.75,
                 color: "var(--white-dim)",
                 maxWidth: "480px",
-                marginBottom: "1.5rem",
-              }}>
+                marginBottom: "1.5rem" }}>
                 Kik boks klub Laktaši formalno je osnovan 2020. godine, ali priča
                 iza njega počela je mnogo ranije — u sali gdje je Igor Grbić počeo
                 graditi generaciju boraca koji će Laktaše staviti na mapu
@@ -68,8 +66,7 @@ export default function About() {
                 fontSize: "1rem",
                 lineHeight: 1.75,
                 color: "var(--white-dim)",
-                maxWidth: "480px",
-              }}>
+                maxWidth: "480px" }}>
                 Od 2023. klub ulazi u fazu brzog rasta: prvaci Bosne,
                 juniorski prvak Evrope, seniori na podijumu Evropskih prvenstava.
                 Sve to bez glamura, samo treningom.
@@ -81,16 +78,14 @@ export default function About() {
                 marginTop: "2.5rem",
                 padding: "1.4rem",
                 borderLeft: "3px solid var(--red)",
-                background: "rgba(192,57,43,0.05)",
-              }}>
+                background: "rgba(192,57,43,0.05)" }}>
                 <p style={{
                   fontFamily: "var(--font-condensed)",
                   fontSize: "1.1rem",
                   fontWeight: 500,
                   fontStyle: "italic",
                   color: "var(--white)",
-                  lineHeight: 1.5,
-                }}>
+                  lineHeight: 1.5 }}>
                   "Laktaši su dobili prve evropske medalje u kik boksu."
                 </p>
                 <p style={{
@@ -99,8 +94,7 @@ export default function About() {
                   letterSpacing: "0.15em",
                   textTransform: "uppercase",
                   color: "var(--red)",
-                  marginTop: "0.5rem",
-                }}>
+                  marginTop: "0.5rem" }}>
                   — Igor Grbić, 2023.
                 </p>
               </div>
@@ -119,8 +113,7 @@ export default function About() {
                       color: "var(--red)",
                       lineHeight: 1,
                       flexShrink: 0,
-                      marginTop: "2px",
-                    }}>
+                      marginTop: "2px" }}>
                       {p.icon}
                     </span>
                     <div>
@@ -131,16 +124,14 @@ export default function About() {
                         letterSpacing: "0.12em",
                         textTransform: "uppercase",
                         color: "var(--white)",
-                        marginBottom: "0.4rem",
-                      }}>
+                        marginBottom: "0.4rem" }}>
                         {p.title}
                       </div>
                       <p style={{
                         fontFamily: "var(--font-body)",
                         fontSize: "0.88rem",
                         color: "var(--white-dim)",
-                        lineHeight: 1.6,
-                      }}>
+                        lineHeight: 1.6 }}>
                         {p.body}
                       </p>
                     </div>
@@ -157,8 +148,7 @@ export default function About() {
                 alignItems: "center",
                 padding: "1rem 1.5rem",
                 border: "1px solid var(--border)",
-                background: "var(--bg-card)",
-              }}>
+                background: "var(--bg-card)" }}>
                 <img
                   src="/kbs_logo.png"
                   alt="Kickboxing Savez BiH"
@@ -168,14 +158,12 @@ export default function About() {
                   <div style={{
                     fontFamily: "var(--font-condensed)", fontSize: "0.8rem",
                     letterSpacing: "0.18em", textTransform: "uppercase",
-                    color: "var(--white-dim)",
-                  }}>
+                    color: "var(--white-dim)" }}>
                     Zvanični član
                   </div>
                   <div style={{
                     fontFamily: "var(--font-condensed)", fontSize: "1rem",
-                    fontWeight: 700, color: "var(--white)", marginTop: "1px",
-                  }}>
+                    fontWeight: 700, color: "var(--white)", marginTop: "1px" }}>
                     Kickboxing Saveza BiH
                   </div>
                 </div>
