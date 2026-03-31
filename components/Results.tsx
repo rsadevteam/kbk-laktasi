@@ -72,7 +72,7 @@ export default function Results() {
         <div style={{ display: "flex", flexDirection: "column", gap: "4rem" }}>
           {years.map((y, yi) => (
             <ScrollReveal key={y.year} delay={yi * 60}>
-              <div className="year-results-grid">
+              <div className="year-results-grid" style={{ position: "relative" }}>
                 {/* Year label */}
                 <div className="year-label-text" style={{
                   fontFamily: "var(--font-display)",
@@ -84,8 +84,20 @@ export default function Results() {
                   {y.year}
                 </div>
 
+                {/* Fog overlay — fades year text before it reaches results */}
+                <div aria-hidden="true" style={{
+                  position: "absolute",
+                  top: 0,
+                  bottom: 0,
+                  left: "3rem",
+                  width: "14rem",
+                  background: "linear-gradient(to right, transparent, var(--bg-surface))",
+                  pointerEvents: "none",
+                  zIndex: 1,
+                }} />
+
                 {/* Results */}
-                <div style={{ borderLeft: "1px solid var(--border)", paddingLeft: "2rem" }}>
+                <div style={{ borderLeft: "1px solid var(--border)", paddingLeft: "2rem", position: "relative", zIndex: 2 }}>
                   {y.results.map((r, ri) => (
                     <div
                       key={ri}
