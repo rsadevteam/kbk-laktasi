@@ -94,7 +94,7 @@ export default function Hero() {
         zIndex: 10,
         maxWidth: "1400px",
         margin: "0 auto",
-        padding: "8rem 2rem 5rem",
+        padding: "7rem 2rem",
         width: "100%",
         boxSizing: "border-box" }}
         className="hero-content-pad"
@@ -112,7 +112,7 @@ export default function Hero() {
           className="hero-title"
           style={{
             fontFamily: "var(--font-display)",
-            fontSize: "clamp(5.5rem, 16vw, 18rem)",
+            fontSize: "clamp(5.5rem, min(14vw, 15vh), 12rem)",
             lineHeight: 0.88,
             letterSpacing: "-0.01em",
             color: "var(--white)",
@@ -187,13 +187,13 @@ export default function Hero() {
 
         {/* CTAs */}
         <div ref={ctaRef} className="hero-ctas" style={{ marginTop: "3rem", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-          <a href="#sampioni" className="btn-punch">
+          <a href="#athletes" className="btn-punch">
             Upoznaj šampione
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
-          <a href="#kontakt" className="btn-ghost">
+          <a href="#contact" className="btn-ghost">
             Prijavi se na trening
           </a>
         </div>

@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-	{ label: "O Klubu", href: "#o-klubu", id: "o-klubu" },
-	{ label: "Šampioni", href: "#sampioni", id: "sampioni" },
-	{ label: "Rezultati", href: "#rezultati", id: "rezultati" },
-	{ label: "Trener", href: "#trener", id: "trener" },
+	{ label: "O Klubu", href: "#about", id: "about" },
+	{ label: "Šampioni", href: "#athletes", id: "athletes" },
+	{ label: "Rezultati", href: "#results", id: "results" },
+	{ label: "Trener", href: "#coach", id: "coach" },
 ];
 
 export default function Nav() {
@@ -23,7 +23,7 @@ export default function Nav() {
 	}, []);
 
 	useEffect(() => {
-		const sections = [...links.map(link => link.id), "kontakt"]
+		const sections = [...links.map(link => link.id), "contact"]
 			.map(id => document.getElementById(id))
 			.filter((section): section is HTMLElement => section !== null);
 
@@ -158,13 +158,13 @@ export default function Nav() {
 							);
 						})}
 						<a
-							href="#kontakt"
+							href="#contact"
 							className="btn-punch"
-							aria-current={active === "kontakt" ? "location" : undefined}
+							aria-current={active === "contact" ? "location" : undefined}
 							style={{
 								padding: "0.6rem 1.6rem",
 								fontSize: "0.82rem",
-								outline: active === "kontakt" ? "1px solid rgba(232,224,208,0.3)" : "none",
+								outline: active === "contact" ? "1px solid rgba(232,224,208,0.3)" : "none",
 								outlineOffset: "3px",
 							}}
 						>
@@ -232,14 +232,14 @@ export default function Nav() {
 							);
 						})}
 					<a
-						href="#kontakt"
+						href="#contact"
 						className="btn-punch"
-						aria-current={active === "kontakt" ? "location" : undefined}
+						aria-current={active === "contact" ? "location" : undefined}
 						onClick={() => setOpen(false)}
 						style={{
 							marginTop: "1.25rem",
 							display: "inline-flex",
-							outline: active === "kontakt" ? "1px solid rgba(232,224,208,0.3)" : "none",
+							outline: active === "contact" ? "1px solid rgba(232,224,208,0.3)" : "none",
 							outlineOffset: "3px",
 						}}
 					>

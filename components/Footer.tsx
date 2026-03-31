@@ -26,11 +26,11 @@ const socialLinks = [
 ];
 
 const navLinks = [
-	{ href: "#o-klubu", label: "O Klubu" },
-	{ href: "#sampioni", label: "Šampioni" },
-	{ href: "#rezultati", label: "Rezultati" },
-	{ href: "#trener", label: "Trener" },
-	{ href: "#kontakt", label: "Kontakt" },
+	{ href: "#about", label: "O Klubu" },
+	{ href: "#athletes", label: "Šampioni" },
+	{ href: "#results", label: "Rezultati" },
+	{ href: "#coach", label: "Trener" },
+	{ href: "#contact", label: "Kontakt" },
 ];
 
 export default function Footer() {

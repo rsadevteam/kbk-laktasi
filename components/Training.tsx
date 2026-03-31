@@ -25,7 +25,7 @@ const features = [
 
 export default function Training() {
   return (
-    <section style={{
+    <section id="training" style={{
       padding: "7rem 0",
       background: "var(--bg-surface)",
       position: "relative",
@@ -157,7 +157,7 @@ export default function Training() {
                 Kontaktiraj nas i zakaži prvi probni trening.
               </div>
             </div>
-            <a href="#kontakt" className="btn-punch cta-btn">
+            <a href="#contact" className="btn-punch cta-btn">
               Kontaktiraj klub
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                 <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

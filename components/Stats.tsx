@@ -41,7 +41,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section style={{
+    <section id="stats" style={{
       background: "var(--bg-surface)",
       borderTop: "1px solid var(--border)",
       borderBottom: "1px solid var(--border)",

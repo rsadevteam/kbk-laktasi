@@ -4,8 +4,8 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function Contact() {
   return (
-    <section id="kontakt" style={{
-      padding: "7rem 0 5rem",
+    <section id="contact" style={{
+      padding: "7rem 0",
       background: "var(--bg)",
       position: "relative",
       overflow: "hidden" }}>

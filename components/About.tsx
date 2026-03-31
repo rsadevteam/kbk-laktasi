@@ -21,7 +21,7 @@ const pillars = [
 
 export default function About() {
   return (
-    <section id="o-klubu" style={{ padding: "7rem 0", position: "relative", overflow: "hidden" }}>
+    <section id="about" style={{ padding: "7rem 0", position: "relative", overflow: "hidden" }}>
       <div className="hex-grid-bg" />
 
       <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 2rem", position: "relative", zIndex: 1 }}>

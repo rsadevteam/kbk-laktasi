@@ -59,7 +59,7 @@ const athletes = [
 
 export default function Athletes() {
   return (
-    <section id="sampioni" style={{
+    <section id="athletes" style={{
       padding: "7rem 0",
       background: "var(--bg)",
       position: "relative",

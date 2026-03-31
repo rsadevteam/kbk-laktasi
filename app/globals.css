@@ -260,8 +260,8 @@ body::before {
   }
 
   .hero-content-pad {
-    padding-top: 5.5rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
   }
 
   .hero-ctas {

@@ -44,7 +44,7 @@ const years = [
 
 export default function Results() {
   return (
-    <section id="rezultati" style={{
+    <section id="results" style={{
       padding: "7rem 0",
       background: "var(--bg-surface)",
       position: "relative",

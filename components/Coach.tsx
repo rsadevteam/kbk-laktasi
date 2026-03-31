@@ -12,7 +12,7 @@ const achievements = [
 
 export default function Coach() {
   return (
-    <section id="trener" style={{
+    <section id="coach" style={{
       padding: "7rem 0",
       background: "var(--bg)",
       position: "relative",
