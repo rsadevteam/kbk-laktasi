@@ -107,6 +107,19 @@ export default function Footer() {
 					<div style={{ fontFamily: "var(--font-condensed)", fontSize: "0.72rem", letterSpacing: "0.12em", color: "var(--white-dim)", textAlign: "right" }}>
 						<div>Laktaši, Republika Srpska, BiH</div>
 						<div style={{ marginTop: "0.2rem", opacity: 0.6 }}>© 2026 KBK Laktaši</div>
+						<div style={{ marginTop: "0.3rem", opacity: 0.4 }}>
+							Made by{" "}
+							<a
+								href="https://rsateam.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								style={{ color: "inherit", textDecoration: "none", borderBottom: "1px solid rgba(232,224,208,0.2)" }}
+								onMouseEnter={e => (e.currentTarget.style.opacity = "0.8")}
+								onMouseLeave={e => (e.currentTarget.style.opacity = "1")}
+							>
+								RSA Team
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
