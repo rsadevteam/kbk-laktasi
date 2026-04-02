@@ -63,7 +63,7 @@ export default function Results() {
             color: "var(--white)",
             marginBottom: "4rem",
             letterSpacing: "0.02em" }}>
-            HISTORIJA<br />
+            ISTORIJA<br />
             <span style={{ color: "var(--red)" }}>POBJEDA.</span>
           </h2>
         </ScrollReveal>
